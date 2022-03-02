@@ -2,9 +2,9 @@
 
 # [Choice] Ubuntu version (use hirsuite or bionic on local arm64/Apple Silicon): hirsute, focal, bionic
 ARG VARIANT="focal"
-ARG NODE_VERSION="16"
-ARG PLAYWRIGHT_VERSION="1.19.1"
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-${VARIANT}
+ARG NODE_VERSION
+ARG PLAYWRIGHT_VERSION
 
 # Install Node.js 16.x
 RUN curl -fsSL https://deb.nodesource.com/setup_${NODE_VERSION}.x | sudo -E bash - && \
