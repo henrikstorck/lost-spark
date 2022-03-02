@@ -1,5 +1,5 @@
 {
-	"name": "lost-assembler",
+	"name": "lost-spark",
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
