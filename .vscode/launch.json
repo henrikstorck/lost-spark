@@ -11,7 +11,7 @@
             "url": "http://localhost:3000",
             "webRoot": "${workspaceFolder}/src",
             "preLaunchTask": "npm: dev",
-            "postDebugTask": "stop devserver",
+            "postDebugTask": "Terminate All Tasks",
         }
     ]
 }

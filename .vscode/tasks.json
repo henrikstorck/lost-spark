@@ -24,18 +24,18 @@
 			"isBackground": true
 		},
 		{
-			"label": "stop devserver",
+			"label": "Terminate All Tasks",
+			"command": "echo ${input:terminate}",
 			"type": "shell",
-			"command": "fuser -k 3000/tcp",
-			"presentation": {
-				"echo": false,
-				"reveal": "silent",
-				"focus": false,
-				"panel": "shared",
-				"showReuseMessage": false,
-				"clear": true,
-				"close": true
-			}
+			"problemMatcher": []
 		}
 	],
+	"inputs": [
+		{
+			"id": "terminate",
+			"type": "command",
+			"command": "workbench.action.tasks.terminate",
+			"args": "terminateAll"
+		}
+	]
 }
